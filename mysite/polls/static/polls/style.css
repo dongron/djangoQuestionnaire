@@ -1,0 +1,137 @@
+body {
+    background-color: white;
+    color: blue;
+    padding 0px;
+    margin 0px;
+}
+
+ul li {
+    list-style: none;
+    display: block;
+}
+
+ul li a {
+    color: darkblue;
+    text-decoriation: none;
+}
+
+#top-nav {
+    background-color: dimgray;
+    padding: 3px;
+    margin: 0px 0px 0px 0px;
+    width: 70.1%;
+    height: 25px;
+    overflow: auto;
+    z-index: 10;
+    position: relative;
+    padding-left: 30%;
+}
+#top-nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+#top-nav ul li {
+    width: 175px;
+    margin: 0px;
+    margin: 2px;
+    padding-right: 5px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    float: left;
+    border: thin solid white;
+    list-style: none;
+    height: 18px;
+}
+
+#top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    width:99%;
+    height: 99%;
+    display: block;
+}
+
+#side-nav {
+    padding: 3px;
+    margin: 15px 0px 0px 0px;
+    width: 10%;
+    height: 350px;
+    overflow: auto;
+    z-index: 10;
+    position: relative;
+    border-right: outset thin darkblue;
+    text-align: center;
+    color: black;
+    float: left;
+}
+
+#side-nav ul {
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+#side-nav ul li {
+    width: 90%;
+    margin: 2px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    float: left;
+    border-bottom: thin solid white;
+    list-style: none;
+    height: 18px;
+    display: block;
+}
+
+#side-nav ul li a {
+    width: 99%;
+    color: black;
+    text-decoration: none;
+    height: 18px;
+}
+
+#content {
+    margin: 30px 5px 5px 30%;
+    top: 30px;
+    position: fixed;
+    color: black;
+}
+
+#content ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+margin-top: 10px;
+margin-bottom: 50px;
+}
+
+#button {
+    margin: 60px;
+    height: 35px;
+    width: 100px;
+    padding: auto;
+}
+
+td {
+    border: outset darkblue thin;
+}
+
+table {
+    margin: 50px 50px 60px -200px;
+}
+
+tr td {
+    width: 300px;
+    padding: 5px;
+    text-position: center;
+}
+
+#again {
+    margin: 35px;
+    color: black;
+    text-decoration: none;
+}

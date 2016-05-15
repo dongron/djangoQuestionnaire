@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+</head>
+<style>
+    #top-nav ul li:nth-child(3){
+    background-color: lightblue;
+}
+</style>
+
+<body>
+<div id="top-nav">
+    <ul>
+        <li><a href="http://127.0.0.1:8000/polls/">Pytania</a></li>
+        <li><a href="http://127.0.0.1:8000/polls/1/">Głosowanie</a></li>
+        <li><a href="http://127.0.0.1:8000/polls/1/results/">Wyniki</a></li>
+    </ul>
+</div>
+<div id="side-nav">
+    nr pytania:
+    <ul>
+        <li><a href="http://127.0.0.1:8000/polls/1/results/">_1_</a></li>
+        <li><a href="http://127.0.0.1:8000/polls/2/results/">_2_</a></li>
+        <li><a href="http://127.0.0.1:8000/polls/3/results/">_3_</a></li>
+    </ul>
+</div>
+
+
+<div id="content">
+<h1>{{ question.question_text }} - odpowiedź </h1>
+
+
+    <table>
+        <tr>
+            {% for choice in question.choice_set.all %}
+            <td>{{ choice.choice_text }}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for choice in question.choice_set.all %}
+            <td> {{ choice.votes }} </td>
+            {% endfor %}
+        </tr>
+    </table>
+
+<a id="again" href="{% url 'polls:detail' question.id %}">Zagłosować ponownie?</a>
+
+</div>
+</body>
+</html>
